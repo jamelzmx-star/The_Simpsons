@@ -1,0 +1,47 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.pag-btn {
+  min-width: 40px;
+  height: 40px;
+  padding: 0 10px;
+  background: white;
+  border: 2px solid #1A1A1A;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #1A1A1A;
+  transition: all 0.15s;
+}
+
+.pag-btn:hover:not(:disabled):not(.active) {
+  background: #FFFDE7;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 #1A1A1A;
+}
+
+.pag-btn.active {
+  background: #FED90F;
+  box-shadow: 3px 3px 0 #1A1A1A;
+  transform: translate(-1px, -1px);
+}
+
+.pag-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.pag-dots {
+  font-weight: 700;
+  color: #999;
+  padding: 0 4px;
+}
